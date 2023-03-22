@@ -127,27 +127,8 @@ class ViewController: UIViewController {
     }
     
     func showRandomKenny() {
-        let randomImg = Int.random(in: 1..<10)
-        
-        if randomImg == 1 {
-            imageViewOne.isHidden = false
-        } else if randomImg == 2 {
-            imageViewTwo.isHidden = false
-        } else if randomImg == 3 {
-            imageViewThree.isHidden = false
-        } else if randomImg == 4 {
-            imageViewFour.isHidden = false
-        } else if randomImg == 5 {
-            imageViewFive.isHidden = false
-        } else if randomImg == 6 {
-            imageViewSix.isHidden = false
-        } else if randomImg == 7 {
-            imageViewSeven.isHidden = false
-        } else if randomImg == 8 {
-            imageViewEight.isHidden = false
-        } else {
-            imageViewNine.isHidden = false
-        }
+        let randomImg = Int.random(in: 0..<9)
+        kennyArray[randomImg].isHidden = false
     }
 
     func hideAllImages() {
