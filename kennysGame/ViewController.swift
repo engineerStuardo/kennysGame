@@ -127,8 +127,8 @@ class ViewController: UIViewController {
     }
     
     func showRandomKenny() {
-        let randomImg = Int.random(in: 0..<9)
-        kennyArray[randomImg].isHidden = false
+        let randomIndexImg = Int.random(in: 0..<9)
+        kennyArray[randomIndexImg].isHidden = false
     }
 
     func hideAllImages() {
