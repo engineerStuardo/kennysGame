@@ -16,66 +16,113 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecH-GO-VUx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecH-GO-VUx">
                                 <rect key="frame" x="146" y="78" width="101" height="40.666666666666657"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKN-Hl-4ag">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKN-Hl-4ag">
                                 <rect key="frame" x="117" y="136.66666666666666" width="129" height="20.333333333333343"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="Lu1-16-DJc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="Lu1-16-DJc">
                                 <rect key="frame" x="20" y="206" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="nx7-c9-wey"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-aL-nTc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="LVa-aL-nTc">
                                 <rect key="frame" x="272" y="208" width="110" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-T4-eqD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="eFo-T4-eqD">
                                 <rect key="frame" x="20" y="356" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="az8-TP-rcE">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="az8-TP-rcE">
                                 <rect key="frame" x="280" y="356" width="102" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="P9v-kY-Ykr"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-wl-Mph">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-wl-Mph">
                                 <rect key="frame" x="20" y="506" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Z6e-nO-zsX"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="BWj-rP-uIe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="BWj-rP-uIe">
                                 <rect key="frame" x="275" y="504" width="107" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="keu-A3-Sx4"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highscore:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-w8-iC0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highscore:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1d-w8-iC0">
                                 <rect key="frame" x="110" y="755.66666666666663" width="173" height="25.333333333333371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-AB-4Y8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="wwk-AB-4Y8">
                                 <rect key="frame" x="146" y="208" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="ima-mm-EpF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="ima-mm-EpF">
                                 <rect key="frame" x="146" y="358" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="tkm-xK-SCP"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-S7-XFL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KennyMcCormick" translatesAutoresizingMaskIntoConstraints="NO" id="E7l-S7-XFL">
                                 <rect key="frame" x="146" y="508" width="109" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="QTF-aR-IWV"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="top" secondItem="Lu1-16-DJc" secondAttribute="bottom" constant="10" id="0WN-ic-8ll"/>
+                            <constraint firstItem="ima-mm-EpF" firstAttribute="leading" secondItem="E7l-S7-XFL" secondAttribute="leading" id="5cQ-CW-wyB"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="trailing" secondItem="ima-mm-EpF" secondAttribute="trailing" id="61G-Pg-x8A"/>
+                            <constraint firstItem="m1d-w8-iC0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="9ep-eA-Leq"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="leading" secondItem="Lu1-16-DJc" secondAttribute="trailing" constant="17" id="BQl-Ce-aYA"/>
+                            <constraint firstItem="aKN-Hl-4ag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="CbX-iF-Ahm"/>
+                            <constraint firstItem="ecH-GO-VUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="FZn-Ep-lO2"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="bottom" secondItem="LVa-aL-nTc" secondAttribute="bottom" id="GU5-MO-pDO"/>
+                            <constraint firstItem="E7l-S7-XFL" firstAttribute="top" secondItem="ima-mm-EpF" secondAttribute="bottom" constant="10" id="Gg0-6W-2Mu"/>
+                            <constraint firstItem="az8-TP-rcE" firstAttribute="trailing" secondItem="BWj-rP-uIe" secondAttribute="trailing" id="JVp-ld-Gba"/>
+                            <constraint firstItem="az8-TP-rcE" firstAttribute="top" secondItem="LVa-aL-nTc" secondAttribute="bottom" constant="8" id="KTT-MB-Ur4"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="leading" secondItem="ima-mm-EpF" secondAttribute="leading" id="KYQ-m6-hgP"/>
+                            <constraint firstItem="ecH-GO-VUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="LS6-vG-AfS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVa-aL-nTc" secondAttribute="trailing" constant="11" id="MW2-bo-fUm"/>
+                            <constraint firstItem="Lu1-16-DJc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NdW-mN-DMo"/>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="top" secondItem="az8-TP-rcE" secondAttribute="top" id="Pil-Kx-hVN"/>
+                            <constraint firstItem="ecH-GO-VUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RBi-Bq-IdU"/>
+                            <constraint firstItem="az8-TP-rcE" firstAttribute="leading" secondItem="ima-mm-EpF" secondAttribute="trailing" constant="25" id="T5j-D5-RJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aKN-Hl-4ag" secondAttribute="trailing" constant="147" id="WX7-bT-9pu"/>
+                            <constraint firstItem="ima-mm-EpF" firstAttribute="trailing" secondItem="E7l-S7-XFL" secondAttribute="trailing" id="ajw-L7-UJz"/>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="trailing" secondItem="e5e-wl-Mph" secondAttribute="trailing" id="auN-xm-xGN"/>
+                            <constraint firstItem="LVa-aL-nTc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="auU-ms-jVO"/>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="azu-7B-YJW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1d-w8-iC0" secondAttribute="bottom" constant="37.000000000000114" id="cCc-5g-ztZ"/>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="bottom" secondItem="az8-TP-rcE" secondAttribute="bottom" id="cXP-6S-W13"/>
+                            <constraint firstItem="LVa-aL-nTc" firstAttribute="leading" secondItem="wwk-AB-4Y8" secondAttribute="trailing" constant="17" id="d2p-br-uZ2"/>
+                            <constraint firstItem="ecH-GO-VUx" firstAttribute="centerX" secondItem="m1d-w8-iC0" secondAttribute="centerX" id="dnQ-3d-50L"/>
+                            <constraint firstItem="LVa-aL-nTc" firstAttribute="trailing" secondItem="az8-TP-rcE" secondAttribute="trailing" id="eER-f4-TEN"/>
+                            <constraint firstItem="Lu1-16-DJc" firstAttribute="leading" secondItem="eFo-T4-eqD" secondAttribute="leading" id="eS8-6Y-Jbo"/>
+                            <constraint firstItem="BWj-rP-uIe" firstAttribute="top" secondItem="az8-TP-rcE" secondAttribute="bottom" constant="8" id="fzB-iU-lSD"/>
+                            <constraint firstItem="ima-mm-EpF" firstAttribute="top" secondItem="wwk-AB-4Y8" secondAttribute="bottom" constant="10" id="gDJ-gK-h5V"/>
+                            <constraint firstItem="e5e-wl-Mph" firstAttribute="top" secondItem="eFo-T4-eqD" secondAttribute="bottom" constant="10" id="gtT-1g-5uY"/>
+                            <constraint firstItem="Lu1-16-DJc" firstAttribute="trailing" secondItem="eFo-T4-eqD" secondAttribute="trailing" id="mnj-j9-ogp"/>
+                            <constraint firstItem="Lu1-16-DJc" firstAttribute="top" secondItem="aKN-Hl-4ag" secondAttribute="bottom" constant="49.000000000000028" id="nNE-5S-5p6"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="top" secondItem="LVa-aL-nTc" secondAttribute="top" id="ohd-nH-Qne"/>
+                            <constraint firstItem="ecH-GO-VUx" firstAttribute="leading" secondItem="wwk-AB-4Y8" secondAttribute="leading" id="pZM-p9-V01"/>
+                            <constraint firstItem="BWj-rP-uIe" firstAttribute="leading" secondItem="E7l-S7-XFL" secondAttribute="trailing" constant="20" id="qbx-E7-jE2"/>
+                            <constraint firstItem="eFo-T4-eqD" firstAttribute="leading" secondItem="e5e-wl-Mph" secondAttribute="leading" id="r9v-mI-Lc7"/>
+                            <constraint firstItem="wwk-AB-4Y8" firstAttribute="top" secondItem="aKN-Hl-4ag" secondAttribute="bottom" constant="51.000000000000028" id="tIe-YV-ksc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="ecH-GO-VUx" id="dJU-9K-UwO"/>

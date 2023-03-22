@@ -26,17 +26,22 @@ class ViewController: UIViewController {
     var timer = Timer()
     var score = 0
     var highScore = 0
+    var kennyArray = [UIImageView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        kennyArray = [imageViewOne, imageViewTwo, imageViewThree, imageViewFour, imageViewFive, imageViewSix, imageViewSeven, imageViewEight, imageViewNine]
+        
         hideAllImages()
         initializeTimer()
         enabledUserInteraction()
         addingGestureRecognizer()
-        
+        initialTasks()
+    }
+    
+    func initialTasks() {
         scoreLabel.text = "Score: \(score)"
-        
         highScore = UserDefaults.standard.integer(forKey: "Score")
         highscoreLabel.text = "Highscore: \(highScore)"
     }
@@ -76,15 +81,9 @@ class ViewController: UIViewController {
     }
     
     func enabledUserInteraction() {
-        imageViewOne.isUserInteractionEnabled = true
-        imageViewTwo.isUserInteractionEnabled = true
-        imageViewThree.isUserInteractionEnabled = true
-        imageViewFour.isUserInteractionEnabled = true
-        imageViewFive.isUserInteractionEnabled = true
-        imageViewSix.isUserInteractionEnabled = true
-        imageViewSeven.isUserInteractionEnabled = true
-        imageViewEight.isUserInteractionEnabled = true
-        imageViewNine.isUserInteractionEnabled = true
+        for kenny in kennyArray {
+            kenny.isUserInteractionEnabled = true
+        }
     }
     
     func initializeTimer() {
@@ -94,8 +93,8 @@ class ViewController: UIViewController {
     
     @objc func timerFunction() {
         hideAllImages()
-        counterLabel.text = "\(counter)"
         counter -= 1
+        counterLabel.text = "\(counter)"
         showRandomKenny()
         
         if counter == 0 {
@@ -104,7 +103,7 @@ class ViewController: UIViewController {
             timer.invalidate()
             
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: .alert)
-            let okButton = UIAlertAction(title: "Ok", style: .default)
+            let okButton = UIAlertAction(title: "Ok", style: .cancel)
             let replayButton = UIAlertAction(title: "Replay", style: .default, handler: playAgain)
             
             alert.addAction(okButton)
@@ -152,15 +151,9 @@ class ViewController: UIViewController {
     }
 
     func hideAllImages() {
-        imageViewOne.isHidden = true
-        imageViewTwo.isHidden = true
-        imageViewThree.isHidden = true
-        imageViewFour.isHidden = true
-        imageViewFive.isHidden = true
-        imageViewSix.isHidden = true
-        imageViewSeven.isHidden = true
-        imageViewEight.isHidden = true
-        imageViewNine.isHidden = true
+        for kenny in kennyArray {
+            kenny.isHidden = true
+        }
     }
 
 }
